@@ -4,8 +4,8 @@ import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';
 import FeaturesHome from '../partials/Features';
 import Newsletter from '../partials/Newsletter';
+import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Footer from '../partials/Footer';
-import Banner from '../partials/Banner';
 
 function Home() {
   return (
@@ -20,6 +20,7 @@ function Home() {
         {/*  Page sections */}
         <HeroHome />
         <FeaturesHome />
+        <FeaturesBlocks></FeaturesBlocks>
         <Newsletter />
 
       </main>
