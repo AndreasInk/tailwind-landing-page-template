@@ -54,7 +54,7 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Power Accessability</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Power Acessability</div>
                     <div className="text-gray-600">PingPath empowers the visually impaired to more easily navigate the world with indoor maps</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
