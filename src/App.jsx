@@ -15,6 +15,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
 import NotFound from './partials/NotFound';
+import Chat from './pages/chat';
 function App() {
 
   const location = useLocation();
@@ -38,6 +39,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/chat" element={<Chat />} />
         <Route path="/building" element={<NotFound />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />

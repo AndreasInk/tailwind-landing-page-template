@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
 
 import FeaturesBg from '../images/features-bg.png';
+import Maps from '../images/maps.png';
 import iPhones from '../images/iPhones.png';
 function Features() {
 
@@ -87,9 +88,9 @@ function Features() {
                     <div className="text-gray-600">Build exciting expereiences for your customers that drive profits</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.334 8.06a.5.5 0 00-.421-.237 6.023 6.023 0 01-5.905-6c0-.41.042-.82.125-1.221a.5.5 0 00-.614-.586 6 6 0 106.832 8.529.5.5 0 00-.017-.485z" fill="#191919" fillRule="nonzero" />
-                    </svg>
+                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.91211 10.2832L19.1113 5.05859C18.9648 4.91211 18.7891 4.79492 18.5742 4.67773L11.6797 0.751953C11.084 0.410156 10.4883 0.224609 9.91211 0.224609C9.32617 0.224609 8.73047 0.410156 8.13477 0.751953L1.25 4.67773C1.03516 4.79492 0.859375 4.91211 0.703125 5.05859L9.91211 10.2832ZM9.23828 21.4746V11.4551L0.078125 6.2207C0.0195312 6.43555 0 6.66992 0 6.96289V14.5703C0 15.9863 0.498047 16.5137 1.39648 17.0312L9.05273 21.3867C9.11133 21.4258 9.16992 21.4551 9.23828 21.4746ZM10.5762 21.4746C10.6445 21.4551 10.7031 21.4258 10.7715 21.3867L18.418 17.0312C19.3262 16.5137 19.8145 15.9863 19.8145 14.5703V6.96289C19.8145 6.66992 19.7949 6.43555 19.7363 6.2207L10.5762 11.4551V21.4746Z" fill="black"/>
+</svg>
                   </div>
                 </a>
               </div>
@@ -128,7 +129,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={iPhones} width="500" height="462" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={Maps} width="500" height="462" alt="Features bg" />
                 
                   </div>
                 </Transition>

@@ -27,13 +27,13 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">LiDAR for Visually Impaired</Link>
+                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">PingPath</Link>
               </li>
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">LiDAR for Robotics</Link>
+                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">ARtistry</Link>
               </li>
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">LiDAR for AR Applications</Link>
+                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">AIRobotics</Link>
               </li>
             </ul>
           </div>
