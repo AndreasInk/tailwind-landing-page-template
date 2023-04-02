@@ -7,20 +7,20 @@ function Newsletter() {
         <div className="pb-12 md:pb-20">
 
           {/* CTA box */}
-          <div className="relative bg-gray-900 rounded py-10 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" data-aos="zoom-y-out">
+          <div className="relative bg-blue-900 rounded py-40 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" data-aos="zoom-y-out">
 
             {/* Background illustration */}
             <div className="absolute right-0 bottom-0 pointer-events-none hidden lg:block" aria-hidden="true">
               <svg width="428" height="328" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <radialGradient cx="35.542%" cy="34.553%" fx="35.542%" fy="34.553%" r="96.031%" id="ni-a">
-                    <stop stopColor="#DFDFDF" offset="0%" />
-                    <stop stopColor="#4C4C4C" offset="44.317%" />
-                    <stop stopColor="#333" offset="100%" />
+                    <stop stopColor="#FF331F" offset="0%" />
+                    <stop stopColor="#FF331F" offset="44.317%" />
+                    <stop stopColor="#FF33" offset="100%" />
                   </radialGradient>
                 </defs>
                 <g fill="none" fillRule="evenodd">
-                  <g fill="#FFF">
+                  <g fill="#FF331F">
                     <ellipse fillOpacity=".04" cx="185" cy="15.576" rx="16" ry="15.576" />
                     <ellipse fillOpacity=".24" cx="100" cy="68.402" rx="24" ry="23.364" />
                     <ellipse fillOpacity=".12" cx="29" cy="251.231" rx="29" ry="28.231" />
@@ -39,8 +39,8 @@ function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Powering your business</h3>
-                <p className="text-gray-300 text-lg mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit nemo expedita voluptas culpa sapiente.</p>
+                <h3 className="h3 text-white mb-2">Join the Waitlist</h3>
+                <p className="text-gray-300 text-lg mb-6"></p>
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
@@ -50,7 +50,6 @@ function Newsletter() {
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
-                  <p className="text-sm text-gray-400 mt-3">7 days free trial. No credit card required.</p>
                 </form>
               </div>
 
