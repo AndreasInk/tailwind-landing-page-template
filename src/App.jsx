@@ -15,7 +15,7 @@ import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import ResetPassword from './pages/ResetPassword';
 import NotFound from './partials/NotFound';
-import Chat from './pages/chat';
+import Chat from './pages/Chat';
 function App() {
 
   const location = useLocation();
