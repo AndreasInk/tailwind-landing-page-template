@@ -34,7 +34,7 @@ function Features() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
             <h1 className="h2 mb-4">Explore the possibilities</h1>
-            <p className="text-xl text-gray-600">Learn how what's possible with PingPath</p>
+            <p className="text-xl text-gray-600">Learn how what's possible with Ping Path</p>
           </div>
 
           {/* Section content */}
@@ -54,7 +54,7 @@ function Features() {
                   onClick={(e) => { e.preventDefault(); setTab(1); }}
                 >
                   <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">Power Acessability</div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">Power Accessability</div>
                     <div className="text-gray-600">Ping Path empowers the visually impaired to more easily navigate the world with indoor maps</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
