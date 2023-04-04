@@ -27,7 +27,7 @@ function Footer() {
             <h6 className="text-gray-800 font-medium mb-2">Products</h6>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">PingPath</Link>
+                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Ping Path</Link>
               </li>
               <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">ARtistry</Link>
@@ -46,7 +46,7 @@ function Footer() {
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
               </li>
               <li className="mb-2">
-                <Link to="#" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</Link>
+                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</Link>
               </li>
               <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Partners</Link>
