@@ -3,7 +3,7 @@ import Transition from '../utils/Transition';
 
 import FeaturesBg from '../images/features-bg.png';
 import Maps from '../images/maps.png';
-import iPhones from '../images/iPhones.png';
+import Shapes from '../images/shapes.png';
 function Features() {
 
   const [tab, setTab] = useState(1);
@@ -70,7 +70,7 @@ function Features() {
                 >
                   <div>
                     <div className="font-bold leading-snug tracking-tight mb-1">Enhancing In-Store Analytics</div>
-                    <div className="text-gray-600">With AR expereiences, your business can more gather foot traffic statistics to maximize profit</div>
+                    <div className="text-gray-600">With AR experiences, your business can more gather foot traffic statistics to maximize profit</div>
                   </div>
                   <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
                     <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@ function Features() {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={FeaturesBg} width="500" height="462" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={Shapes} width="500" height="462" alt="Features bg" />
                   </div>
                 </Transition>
               </div>

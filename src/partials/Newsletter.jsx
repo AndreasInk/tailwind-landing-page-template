@@ -1,11 +1,14 @@
 import React from 'react';
+import { TwitterTweetEmbed } from 'react-twitter-embed';
 
 function Newsletter() {
   return (
     <section>
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pb-12 md:pb-20">
-
+        <TwitterTweetEmbed
+  tweetId={'1643018840299765762'}
+/>
           {/* CTA box */}
           <div className="relative bg-blue-900 rounded py-40 px-8 md:py-16 md:px-12 shadow-2xl overflow-hidden" data-aos="zoom-y-out">
 

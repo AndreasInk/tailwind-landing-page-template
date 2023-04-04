@@ -6,7 +6,6 @@ import FeaturesHome from '../partials/Features';
 import Newsletter from '../partials/Newsletter';
 import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Footer from '../partials/Footer';
-
 function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">

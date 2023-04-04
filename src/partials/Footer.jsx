@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import fav from "../images/favicon.svg"
 function Footer() {
   return (
     <footer>
@@ -14,7 +14,7 @@ function Footer() {
             <div className="mb-2">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="Protoco">
-                <img className="h-8" src="/src/images/favicon.svg" alt="Protoco Logo" />
+                <img className="h-8" src={fav} alt="Protoco Logo" />
               </Link>
             </div>
             <div className="text-sm text-gray-600">
@@ -42,12 +42,6 @@ function Footer() {
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
             <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
             <ul className="text-sm">
-              <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Documentation</Link>
-              </li>
-              <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Tutorials & Guides</Link>
-              </li>
               <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
               </li>
