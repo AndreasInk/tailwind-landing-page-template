@@ -8,7 +8,7 @@ import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Footer from '../partials/Footer';
 import Mall from '../images/mall.png'
 import FeaturesBg from '../images/features-bg.png';
-import Box from '../images/Box.png';
+import Box from '../images/box.png';
 
 function MallsHome() {
   return (
