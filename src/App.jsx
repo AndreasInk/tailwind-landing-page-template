@@ -10,12 +10,11 @@ import './css/style.css';
 
 import AOS from 'aos';
 
+import MallsHome from './pages/MallsHome';
+import CampusesHome from './pages/CampusesHome';
 import Home from './pages/Home';
-import SignIn from './pages/SignIn';
-import SignUp from './pages/SignUp';
-import ResetPassword from './pages/ResetPassword';
 import NotFound from './partials/NotFound';
-import Chat from './pages/Chat';
+
 function App() {
 
   const location = useLocation();
@@ -39,11 +38,10 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route path="/chat" element={<Chat />} />
+        <Route exact path="/malls" element={<MallsHome />} />
+        <Route exact path="/campuses" element={<CampusesHome />} />
+        <Route exact path="/stores" element={<MallsHome />} />
         <Route path="/building" element={<NotFound />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
       </Routes>
     </>
   );

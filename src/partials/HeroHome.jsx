@@ -3,7 +3,7 @@ import Modal from '../utils/Modal';
 
 import HeroImage from '../images/hero-image.png';
 
-function HeroHome() {
+function HeroHome(props) {
   const [videoModalOpen, setVideoModalOpen] = useState(false);
   const video = useRef(null);
 
@@ -40,7 +40,7 @@ function HeroHome() {
             </h1>
             <div className="max-w-3xl mx-auto">
               <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
-              Augmenting Reality, Amplifying Intelligence
+              {props.text}
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
                 <div>
