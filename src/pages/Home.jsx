@@ -8,8 +8,8 @@ import FeaturesBlocks from '../partials/FeaturesBlocks';
 import Footer from '../partials/Footer';
 
 import FeaturesBg from '../images/features-bg.png';
-import Maps from '../images/maps.png';
 import Shapes from '../images/shapes.png';
+import Path from '../images/path.png';
 function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -23,10 +23,10 @@ function Home() {
         {/*  Page sections */}
         <HeroHome text="Augmenting Reality, Amplifying Intelligence to Create a More Accessible World"/>
         <FeaturesHome 
-        title="Ping Path is a powerful tool for schools" text="Power accessability for visually impaired, empower first year students, and streamline emergency response" 
-        firstTitle="Power Accessability" firstText="Ping Path empowers the visually impaired to more easily navigate the world with indoor maps" firstImg={FeaturesBg}
-        secondTitle="Enhancing In-Store Analytics" secondText="With AR experiences, your business can more gather foot traffic statistics to maximize profit." secondImg={Maps}
-        thirdTitle="AR Experiences that Captivate" thirdText="Build exciting expereiences for your customers that drive profits" thirdImg={Shapes}/>
+        title="Ping Path is a powerful tool for visually impaired people" text="Navigate indoor spaces with spatial audio, LiDAR, and AI" 
+        firstTitle="Find objects easily" firstText="Ping Path empowers the visually impaired to more easily navigate the world with indoor maps" firstImg={FeaturesBg}
+        secondTitle="Avoid obstacles with ease" secondText="Utilize path finding algorithms and LiDAR based object detection/positioning to avoid obstacles." secondImg={Shapes}
+        thirdTitle="Doors, people, appliances, and more" thirdText="" thirdImg={Path}/>
         <FeaturesBlocks></FeaturesBlocks>
         <Newsletter />
 

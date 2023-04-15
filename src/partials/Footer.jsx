@@ -29,12 +29,12 @@ function Footer() {
               <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Ping Path</Link>
               </li>
-              <li className="mb-2">
+              {/* <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">ARtistry</Link>
               </li>
               <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">AIRobotics</Link>
-              </li>
+              </li> */}
             </ul>
           </div>
 
