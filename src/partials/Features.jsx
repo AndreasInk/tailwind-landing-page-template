@@ -109,7 +109,7 @@ function Features(props) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={props.firstImg} width="500" height="462" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={props.firstImg} alt={props.firstAlt} width="500" height="462" />
                    
                   </div>
                 </Transition>
@@ -126,7 +126,7 @@ function Features(props) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={props.secondImg} width="500" height="462" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={props.secondImg} alt={props.secondAlt} width="500" height="462" />
                 
                   </div>
                 </Transition>
@@ -143,7 +143,7 @@ function Features(props) {
                   leaveEnd="opacity-0 -translate-y-16"
                 >
                   <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={props.thirdImg} width="500" height="462" alt="Features bg" />
+                    <img className="md:max-w-none mx-auto rounded" src={props.thirdImg} alt={props.thirdAlt} width="500" height="462" />
                   </div>
                 </Transition>
               </div>

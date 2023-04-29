@@ -23,7 +23,7 @@ function Header() {
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
             <Link to="/" className="block" aria-label="Cruip">
-              <img src= {favicon}></img>
+              <img src= {favicon} alt="Ping Path's logo that resembles an eye's iris"></img>
             </Link>
           </div>
 

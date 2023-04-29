@@ -14,7 +14,7 @@ function Footer() {
             <div className="mb-2">
               {/* Logo */}
               <Link to="/" className="inline-block" aria-label="Protoco">
-                <img className="h-8" src={fav} alt="Protoco Logo" />
+                <img className="h-8" src={fav} alt="Ping Path's Logo, a bold graident representing an iris of an eye" />
               </Link>
             </div>
             <div className="text-sm text-gray-600">
