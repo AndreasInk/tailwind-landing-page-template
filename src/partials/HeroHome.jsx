@@ -39,7 +39,7 @@ function HeroHome(props) {
               See <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-300">Beyond Limits</span>
             </h1>
             <div className="max-w-3xl mx-auto">
-              <p className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
+              <p role="heading" className="text-xl text-gray-600 mb-8" data-aos="zoom-y-out" data-aos-delay="150">
               {props.text}
               </p>
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
