@@ -21,7 +21,7 @@ function Home() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <HeroHome text="Augmenting Reality, Amplifying Intelligence to Create a More Accessible World"/>
+        <HeroHome text="Improve navigation for the visually impaired with AI and Spatial Computing"/>
         <FeaturesHome 
         title="Ping Path is a powerful tool for visually impaired people" text="Navigate indoor spaces with spatial audio, LiDAR, and AI" 
         firstTitle="Find objects easily" firstText="Ping Path empowers the visually impaired to more easily navigate the world with indoor maps" firstImg={Features} firstAlt="An image describing Ping Path's mission: to Increase Independence for Visually Impaired People with spatial audio and near instant captioning"

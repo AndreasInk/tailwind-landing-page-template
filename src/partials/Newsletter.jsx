@@ -42,14 +42,14 @@ function Newsletter() {
 
               {/* CTA content */}
               <div className="text-center lg:text-left lg:max-w-xl">
-                <h3 className="h3 text-white mb-2">Join the Waitlist</h3>
+                <h3 className="h3 text-white mb-2">Become a beta tester</h3>
                 <p className="text-gray-300 text-lg mb-6"></p>
 
                 {/* CTA form */}
                 <form className="w-full lg:w-auto">
                   <div className="flex flex-col sm:flex-row justify-leading max-w-xs mx-auto sm:max-w-md lg:mx-0">
                    
-                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="https://forms.gle/5n7m9aBnptPUgFnF7">Join</a>
+                    <a className="btn text-white bg-blue-600 hover:bg-blue-700 shadow" href="https://forms.gle/5n7m9aBnptPUgFnF7">Sign up</a>
                   </div>
                   {/* Success message */}
                   {/* <p className="text-sm text-gray-400 mt-3">Thanks for subscribing!</p> */}
