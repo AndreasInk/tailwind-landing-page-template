@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import favicon from '../images/favicon.svg'
+import favicon from '../favicon.svg'
 function Header() {
 
   const [top, setTop] = useState(true);
@@ -22,8 +22,8 @@ function Header() {
           {/* Site branding */}
           <div className="flex-shrink-0 mr-4">
             {/* Logo */}
-            <Link to="/" className="block" aria-label="Cruip">
-              <img src= {favicon} alt="Ping Path's logo that resembles an eye's iris"></img>
+            <Link to="/" className="block" style={{width: "5%"}} aria-label="Cruip">
+              <img src= {favicon} alt="PingPath's logo, press to navigate to the home page"></img>
             </Link>
           </div>
 

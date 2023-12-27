@@ -10,8 +10,6 @@ import './css/style.css';
 
 import AOS from 'aos';
 
-import MallsHome from './pages/MallsHome';
-import CampusesHome from './pages/CampusesHome';
 import Home from './pages/Home';
 import NotFound from './partials/NotFound';
 
@@ -38,9 +36,6 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
-        <Route exact path="/malls" element={<MallsHome />} />
-        <Route exact path="/campuses" element={<CampusesHome />} />
-        <Route exact path="/stores" element={<MallsHome />} />
         <Route path="/building" element={<NotFound />} />
       </Routes>
     </>

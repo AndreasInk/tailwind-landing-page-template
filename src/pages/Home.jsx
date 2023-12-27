@@ -4,12 +4,12 @@ import Header from '../partials/Header';
 import HeroHome from '../partials/HeroHome';
 import FeaturesHome from '../partials/Features';
 import Newsletter from '../partials/Newsletter';
-import FeaturesBlocks from '../partials/FeaturesBlocks';
+import Testimonials from '../partials/Testimonials';
 import Footer from '../partials/Footer';
 
-import FeaturesBg from '../images/features-bg.png';
+import Landing from '../images/hero-image.png';
 import Features from '../images/features.png';
-import Path from '../images/path.png';
+import Siri from '../images/Siri+PingPath.png';
 function Home() {
   return (
     <div className="flex flex-col min-h-screen overflow-hidden">
@@ -23,11 +23,11 @@ function Home() {
         {/*  Page sections */}
         <HeroHome text="Improve navigation for the visually impaired with AI and Spatial Computing"/>
         <FeaturesHome 
-        title="Ping Path is a powerful tool for visually impaired people" text="Navigate indoor spaces with spatial audio, LiDAR, and AI" 
-        firstTitle="Find objects easily" firstText="Ping Path empowers the visually impaired to more easily navigate the world with indoor maps" firstImg={Features} firstAlt="An image describing Ping Path's mission: to Increase Independence for Visually Impaired People with spatial audio and near instant captioning"
-        secondTitle="Avoid obstacles with ease" secondText="Utilize path finding algorithms and LiDAR based object detection/positioning to avoid obstacles." secondImg={FeaturesBg} secondAlt="An image of a hand holding an iPhone with an arrow pointing to an object"
-        thirdTitle="Doors, people, appliances, and more" thirdText="" thirdImg={Path} thirdAlt="A grid showing how Ping Path's path finding algorithm works, helping people avoid obstacles"/>
-        <FeaturesBlocks></FeaturesBlocks>
+        title="PingPath is a powerful tool for people with visual impairments" text="Navigate indoor spaces with spatial audio, LiDAR, and AI" 
+        firstTitle="Find and avoid objects easily" firstText="Ping Path empowers the visually impaired to more easily navigate the world with indoor maps" firstImg={Features} firstAlt="An image describing Ping Path's mission: to Increase Independence for people with visual impairments People with spatial audio and near instant captioning"
+        secondTitle="Question the world around you" secondText='Ask questions such as: "How much money is on the table?" or "How many calories is in this drink?" or "How can I get to the fridge?"' secondImg={Landing} secondAlt="Screenshots of PingPath showing it count money among other tasks"
+        thirdTitle="Ask Siri or PingPath (coming soon)" thirdText="Simply speak to ask your questions and control the app" thirdImg={Siri} thirdAlt="A photo of PingPath working with Siri"/>
+        <Testimonials></Testimonials>
         <Newsletter />
 
       </main>

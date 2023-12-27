@@ -46,12 +46,13 @@ function Footer() {
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
               </li>
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Center</Link>
+                <Link to="https://andreas.craft.me/nnL9M4RftSjD6F" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Guide</Link>
               </li>
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Partners</Link>
+                <Link to="https://github.com/AndreasInk/tailwind-landing-page-template" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Open Source Website</Link>
               </li>
             </ul>
+           
           </div>
 
           {/* 4th block */}
