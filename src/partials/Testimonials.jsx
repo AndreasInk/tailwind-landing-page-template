@@ -51,7 +51,7 @@ function Testimonials() {
                 </blockquote>
                 <cite className="block font-bold text-lg not-italic mb-1">Chris</cite>
                 <div className="text-gray-600">
-                  <span>A college student and future educator with a visual impairments</span> 
+                  <span>A college student and future educator with a visual impairment</span> 
                 </div>
               </div>
 
