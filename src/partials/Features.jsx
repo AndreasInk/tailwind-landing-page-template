@@ -2,104 +2,95 @@ import React, { useState, useRef, useEffect } from 'react';
 import Transition from '../utils/Transition';
 
 function Features(props) {
-
   const [tab, setTab] = useState(1);
-
   const tabs = useRef(null);
 
   const heightFix = () => {
-    if (tabs.current.children[tab]) {
-      tabs.current.style.height = tabs.current.children[tab - 1].offsetHeight + 'px'
+    if (tabs.current?.children[tab - 1]) {
+      tabs.current.style.height = `${tabs.current.children[tab - 1].offsetHeight}px`;
     }
-  }
+  };
 
   useEffect(() => {
-    heightFix()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tab])
+    heightFix();
+  }, [tab]);
 
   return (
-    <section className="relative">
-
-      {/* Section background (needs .relative class on parent and next sibling elements) */}
+    <section className="relative" aria-labelledby="features-heading">
+      {/* Section background */}
       <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      <div
+        className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"
+        aria-hidden="true"
+      ></div>
 
       <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-12 md:pt-20">
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the possibilities</h1>
+          <header className="max-w-3xl mx-auto text-left pb-12 md:pb-16">
+            <h1 id="features-heading" className="h2 mb-4">
+              Explore the possibilities
+            </h1>
             <p className="text-xl text-gray-600">Learn what's possible with Ping Path</p>
-          </div>
+          </header>
 
           {/* Section content */}
           <div className="md:grid md:grid-cols-12 md:gap-6">
-
             {/* Content */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6" data-aos="fade-right">
+            <div
+              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-7 lg:col-span-6 md:mt-6 text-left"
+              data-aos="fade-right"
+            >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
                 <h2 className="h3 mb-3">{props.title}</h2>
                 <p className="text-xl text-gray-600">{props.text}</p>
               </div>
+
               {/* Tabs buttons */}
-              <div className="mb-8 md:mb-0">
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 1 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(1); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">{props.firstTitle}</div>
-                    <div className="text-gray-600">{props.firstText}</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                    </svg>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 2 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(2); }}
-                >
-        
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">{props.secondTitle}</div>
-                    <div className="text-gray-600">{props.secondText}</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                    <svg className="w-3 h-3 fill-current" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M11.854.146a.5.5 0 00-.525-.116l-11 4a.5.5 0 00-.015.934l4.8 1.921 1.921 4.8A.5.5 0 007.5 12h.008a.5.5 0 00.462-.329l4-11a.5.5 0 00-.116-.525z" fillRule="nonzero" />
-                    </svg>
-                  </div>
-                </a>
-                <a
-                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 3 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-gray-200 border-transparent'}`}
-                  href="#0"
-                  onClick={(e) => { e.preventDefault(); setTab(3); }}
-                >
-                  <div>
-                    <div className="font-bold leading-snug tracking-tight mb-1">{props.thirdTitle}</div>
-                    <div className="text-gray-600">{props.thirdText}</div>
-                  </div>
-                  <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                  <svg width="20" height="22" viewBox="0 0 20 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M9.91211 10.2832L19.1113 5.05859C18.9648 4.91211 18.7891 4.79492 18.5742 4.67773L11.6797 0.751953C11.084 0.410156 10.4883 0.224609 9.91211 0.224609C9.32617 0.224609 8.73047 0.410156 8.13477 0.751953L1.25 4.67773C1.03516 4.79492 0.859375 4.91211 0.703125 5.05859L9.91211 10.2832ZM9.23828 21.4746V11.4551L0.078125 6.2207C0.0195312 6.43555 0 6.66992 0 6.96289V14.5703C0 15.9863 0.498047 16.5137 1.39648 17.0312L9.05273 21.3867C9.11133 21.4258 9.16992 21.4551 9.23828 21.4746ZM10.5762 21.4746C10.6445 21.4551 10.7031 21.4258 10.7715 21.3867L18.418 17.0312C19.3262 16.5137 19.8145 15.9863 19.8145 14.5703V6.96289C19.8145 6.66992 19.7949 6.43555 19.7363 6.2207L10.5762 11.4551V21.4746Z" fill="black"/>
-</svg>
-                  </div>
-                </a>
-              </div>
+              <nav aria-label="Feature tabs" className="mb-8 md:mb-0">
+                {['first', 'second', 'third'].map((key, index) => (
+                  <button
+                    key={key}
+                    className={`flex items-start text-left text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${
+                      tab !== index + 1
+                        ? 'bg-white shadow-md border-gray-200 hover:shadow-lg'
+                        : 'bg-gray-200 border-transparent'
+                    }`}
+                    onClick={() => setTab(index + 1)}
+                    aria-selected={tab === index + 1}
+                    aria-controls={`tab-panel-${index + 1}`}
+                  >
+                    <div>
+                      <div className="font-bold leading-snug tracking-tight mb-1">
+                        {props[`${key}Title`]}
+                      </div>
+                      <div className="text-gray-600">{props[`${key}Text`]}</div>
+                    </div>
+                    <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
+                      <svg
+                        className="w-3 h-3 fill-current"
+                        viewBox="0 0 12 12"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true"
+                      >
+                        <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
+                      </svg>
+                    </div>
+                  </button>
+                ))}
+              </nav>
             </div>
 
             {/* Tabs items */}
-            <div className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1" data-aos="zoom-y-out" ref={tabs}>
-              <div className="relative flex flex-col text-center lg:text-right">
-                {/* Item 1 */}
+            <div
+              className="max-w-xl md:max-w-none md:w-full mx-auto md:col-span-5 lg:col-span-6 mb-8 md:mb-0 md:order-1"
+              ref={tabs}
+            >
+              {['first', 'second', 'third'].map((key, index) => (
                 <Transition
-                  show={tab === 1}
-                  appear={true}
+                  key={key}
+                  show={tab === index + 1}
+                  appear
                   className="w-full"
                   enter="transition ease-in-out duration-700 transform order-first"
                   enterStart="opacity-0 translate-y-16"
@@ -107,53 +98,26 @@ function Features(props) {
                   leave="transition ease-in-out duration-300 transform absolute"
                   leaveStart="opacity-100 translate-y-0"
                   leaveEnd="opacity-0 -translate-y-16"
+                  id={`tab-panel-${index + 1}`}
+                  role="tabpanel"
+                  aria-labelledby={`tab-button-${index + 1}`}
                 >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={props.firstImg} alt={props.firstAlt} width="500" height="462" />
-                   
+                  <div className="relative inline-flex flex-col text-left">
+                    <img
+                      className="md:max-w-none mx-auto rounded"
+                      src={props[`${key}Img`]}
+                      alt={props[`${key}Alt`]}
+                      width="500"
+                      height="462"
+                    />
                   </div>
                 </Transition>
-                {/* Item 2 */}
-                <Transition
-                  show={tab === 2}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={props.secondImg} alt={props.secondAlt} width="500" height="462" />
-                
-                  </div>
-                </Transition>
-                {/* Item 3 */}
-                <Transition
-                  show={tab === 3}
-                  appear={true}
-                  className="w-full"
-                  enter="transition ease-in-out duration-700 transform order-first"
-                  enterStart="opacity-0 translate-y-16"
-                  enterEnd="opacity-100 translate-y-0"
-                  leave="transition ease-in-out duration-300 transform absolute"
-                  leaveStart="opacity-100 translate-y-0"
-                  leaveEnd="opacity-0 -translate-y-16"
-                >
-                  <div className="relative inline-flex flex-col">
-                    <img className="md:max-w-none mx-auto rounded" src={props.thirdImg} alt={props.thirdAlt} width="500" height="462" />
-                  </div>
-                </Transition>
-              </div>
-            </div >
-
-          </div >
-
-        </div >
-      </div >
-    </section >
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 }
 
