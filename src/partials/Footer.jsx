@@ -24,7 +24,7 @@ function Footer() {
 
           {/* 2nd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Products</h6>
+            <h3 className="text-gray-800 font-medium mb-2">Products</h3>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Ping Path</Link>
@@ -40,7 +40,7 @@ function Footer() {
 
           {/* 3rd block */}
           <div className="sm:col-span-6 md:col-span-3 lg:col-span-2">
-            <h6 className="text-gray-800 font-medium mb-2">Resources</h6>
+            <h3 className="text-gray-800 font-medium mb-2">Resources</h3>
             <ul className="text-sm">
               <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>

@@ -47,14 +47,14 @@ function HeroHome(props) {
               </span>
             </h1>
             <div className="max-w-3xl mx-auto">
-              <p
+              <h2
                 role="heading"
                 className="text-xl text-gray-600 mb-8"
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
                 {props.text}
-              </p>
+              </h2>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
                 data-aos="zoom-y-out"

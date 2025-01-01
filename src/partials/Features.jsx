@@ -31,7 +31,7 @@ function Features(props) {
             <h1 id="features-heading" className="h2 mb-4">
               Explore the possibilities
             </h1>
-            <p className="text-xl text-gray-600">Learn what's possible with Ping Path</p>
+            <h2 className="text-xl text-gray-600">Learn what's possible with Ping Path</h2>
           </header>
 
           {/* Section content */}
@@ -47,7 +47,7 @@ function Features(props) {
               </div>
 
               {/* Tabs buttons */}
-              <nav aria-label="Feature tabs" className="mb-8 md:mb-0">
+              <nav role="tablist" aria-label="Feature tabs" className="mb-8 md:mb-0">
                 {['first', 'second', 'third'].map((key, index) => (
                   <button
                     key={key}
@@ -57,24 +57,16 @@ function Features(props) {
                         : 'bg-gray-200 border-transparent'
                     }`}
                     onClick={() => setTab(index + 1)}
+                    role="tab"
                     aria-selected={tab === index + 1}
                     aria-controls={`tab-panel-${index + 1}`}
+                    id={`tab-button-${index + 1}`}
                   >
                     <div>
                       <div className="font-bold leading-snug tracking-tight mb-1">
                         {props[`${key}Title`]}
                       </div>
                       <div className="text-gray-600">{props[`${key}Text`]}</div>
-                    </div>
-                    <div className="flex justify-center items-center w-8 h-8 bg-white rounded-full shadow flex-shrink-0 ml-3">
-                      <svg
-                        className="w-3 h-3 fill-current"
-                        viewBox="0 0 12 12"
-                        xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true"
-                      >
-                        <path d="M11.953 4.29a.5.5 0 00-.454-.292H6.14L6.984.62A.5.5 0 006.12.173l-6 7a.5.5 0 00.379.825h5.359l-.844 3.38a.5.5 0 00.864.445l6-7a.5.5 0 00.075-.534z" />
-                      </svg>
                     </div>
                   </button>
                 ))}
