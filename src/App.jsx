@@ -12,6 +12,7 @@ import AOS from 'aos';
 
 import Home from './pages/Home';
 import NotFound from './partials/NotFound';
+import HeroPro from './partials/HeroPro';
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
     <>
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/pricing" element={<HeroPro />} />
         <Route path="/building" element={<NotFound />} />
       </Routes>
     </>
