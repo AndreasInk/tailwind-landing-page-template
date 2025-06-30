@@ -71,6 +71,15 @@ function HeroPro(props) {
                     Download Now
                   </a>
                 </div>
+                <div className="sm:ml-4">
+                  <a
+                    className="btn text-white bg-gray-600 hover:bg-gray-700 w-full mb-4 sm:w-auto sm:mb-0"
+                    href="pingpath://"
+                    aria-label="Return to the PingPath app"
+                  >
+                    Back to PingPath
+                  </a>
+                </div>
               </div>
             </div>
           </div>
