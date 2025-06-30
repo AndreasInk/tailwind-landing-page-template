@@ -81,6 +81,15 @@ function HeroPro(props) {
                   </a>
                 </div>
               </div>
+              <div className="text-center mt-4">
+                <a
+                  className="btn text-white bg-blue-600 hover:bg-blue-700 w-full sm:w-auto"
+                  href="mailto:andreasink17@gmail.com"
+                  aria-label="Get help for PingPath"
+                >
+                  Get Help
+                </a>
+              </div>
             </div>
           </div>
 
