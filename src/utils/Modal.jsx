@@ -54,7 +54,7 @@ function Modal({
         className="fixed inset-0 z-50 overflow-hidden flex items-center justify-center transform px-4 sm:px-6"
         role="dialog"
         aria-modal="true"
-        aria-labelledby={ariaLabel}
+        aria-label={ariaLabel}
         show={show}
         enter="transition ease-out duration-200"
         enterStart="opacity-0 scale-95"

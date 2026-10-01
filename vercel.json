@@ -1,3 +1,19 @@
 {
-    "routes": [{ "src": "/[^.]+", "dest": "/", "status": 200 }]
+  "rewrites": [
+    { "source": "/pricing", "destination": "/pricing/index.html" },
+    { "source": "/pricing/", "destination": "/pricing/index.html" },
+    { "source": "/building", "destination": "/building/index.html" },
+    { "source": "/building/", "destination": "/building/index.html" },
+    { "source": "/:path*", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/pricing/:path*",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
+    },
+    {
+      "source": "/building/:path*",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
+    }
+  ]
 }

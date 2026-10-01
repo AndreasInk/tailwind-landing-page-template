@@ -43,13 +43,13 @@ function Testimonials() {
             className="max-w-3xl mx-auto text-center pb-12 md:pb-16"
             id="testimonials-heading"
           >
-            <h2 className="h2 mb-4">People with visual impairments are loving the app</h2>
+            <h2 className="h2 mb-4">A perspective on accessible navigation</h2>
             <p
               className="text-xl text-gray-600"
               data-aos="zoom-y-out"
               id="testimonials-description"
             >
-              PingPath is helping people more easily experience the world around them
+              Why tools that describe indoor spaces matter
             </p>
           </header>
 

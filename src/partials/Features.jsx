@@ -28,10 +28,10 @@ function Features(props) {
         <div className="pt-12 md:pt-20">
           {/* Section header */}
           <header className="max-w-3xl mx-auto text-left pb-12 md:pb-16">
-            <h1 id="features-heading" className="h2 mb-4">
+            <h2 id="features-heading" className="h2 mb-4">
               Explore the possibilities
-            </h1>
-            <h2 className="text-xl text-gray-600">Learn what's possible with Ping Path</h2>
+            </h2>
+            <p className="text-xl text-gray-600">Learn what's possible with PingPath</p>
           </header>
 
           {/* Section content */}
@@ -42,7 +42,7 @@ function Features(props) {
               data-aos="fade-right"
             >
               <div className="md:pr-4 lg:pr-12 xl:pr-16 mb-8">
-                <h2 className="h3 mb-3">{props.title}</h2>
+                <h3 className="h3 mb-3">{props.title}</h3>
                 <p className="text-xl text-gray-600">{props.text}</p>
               </div>
 

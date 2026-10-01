@@ -41,7 +41,7 @@ function HeroHome(props) {
               className="text-5xl md:text-6xl font-extrabold leading-tighter tracking-tighter mb-4"
               data-aos="zoom-y-out"
             >
-              See{' '}
+              PingPath:{' '}
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-blue-300">
                 Beyond Limits
               </span>
@@ -85,7 +85,7 @@ function HeroHome(props) {
                   src={HeroImage}
                   width="768"
                   height="432"
-                  alt="Illustration of accessibility features in action"
+                  alt="PingPath app screenshots showing questions about surroundings"
                 />
               </div>
               <button
