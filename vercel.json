@@ -8,6 +8,14 @@
   ],
   "headers": [
     {
+      "source": "/pricing/",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
+    },
+    {
+      "source": "/building/",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
+    },
+    {
       "source": "/pricing/:path*",
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex, follow" }]
     },
