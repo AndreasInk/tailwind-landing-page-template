@@ -1,0 +1,13 @@
+# PingPath
+
+> PingPath by Andreas Ink is an iOS app for blind and visually impaired people to explore indoor surroundings with spatial audio, AI captions, voice questions, and LiDAR.
+
+## Official information
+- [Product and frequently asked questions](https://www.pingpath.app/): Features, device compatibility, and experimental pathfinding limitations.
+- [App Store](https://apps.apple.com/us/app/pingpath-blind-ai-tools/id1644421594): Current version, compatibility, pricing, and download.
+- [Support guide](https://andreas.craft.me/nnL9M4RftSjD6F): Product support.
+- [Privacy policy](https://www.craft.do/s/ePRw8bs20jJPdy)
+- [Terms of use](https://www.craft.do/s/1bBGHgNwxDQxbA)
+
+## Capability limits
+Pathfinding is an early experimental feature and should not be used without someone to assist with navigation. The app is optimized for LiDAR-enabled phones and also works with standard cameras; capabilities differ by hardware. Consult the current App Store listing for compatibility and pricing.

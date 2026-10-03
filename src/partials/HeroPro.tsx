@@ -55,7 +55,7 @@ function HeroPro(props) {
                 data-aos="zoom-y-out"
                 data-aos-delay="150"
               >
-                Unlock advanced navigation with reduced rate limits, hands-free voice assistance, and Siri integration—subscribe to PingPath Pro for $3.99 a month.
+                Explore PingPath's plans in the app. Check the App Store and in-app purchase screen for current pricing and availability.
               </h2>
               <div
                 className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center"
@@ -65,8 +65,8 @@ function HeroPro(props) {
                 <div>
                   <a
                     className="btn text-white bg-blue-600 hover:bg-blue-700 w-full mb-4 sm:w-auto sm:mb-0"
-                    href="https://apps.apple.com/us/app/pingpath-pro/idXXXXXXXXX" // Replace with the correct URL
-                    aria-label="Download PingPath Pro app from the App Store"
+                    href="https://apps.apple.com/us/app/pingpath-blind-ai-tools/id1644421594"
+                    aria-label="Download PingPath from the App Store"
                   >
                     Download Now
                   </a>

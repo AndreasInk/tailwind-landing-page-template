@@ -13,12 +13,12 @@ function Footer() {
           <div className="sm:col-span-12 lg:col-span-3">
             <div className="mb-2">
               {/* Logo */}
-              <Link to="/" className="inline-block" aria-label="Protoco">
-                <img className="h-8" src={fav} alt="Ping Path's Logo, a bold graident representing an iris of an eye" />
+              <Link to="/" className="inline-block" aria-label="PingPath home">
+                <img className="h-8" src={fav} alt="PingPath logo" />
               </Link>
             </div>
             <div className="text-sm text-gray-600">
-              <Link to="/building" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</Link> · <Link to="#" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</Link>
+              <a href="https://www.craft.do/s/1bBGHgNwxDQxbA" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Terms</a> · <a href="https://www.craft.do/s/ePRw8bs20jJPdy" className="text-gray-600 hover:text-gray-900 hover:underline transition duration-150 ease-in-out">Privacy Policy</a>
             </div>
           </div>
 
@@ -27,7 +27,7 @@ function Footer() {
             <h3 className="text-gray-800 font-medium mb-2">Products</h3>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Ping Path</Link>
+                <a href="https://apps.apple.com/us/app/pingpath-blind-ai-tools/id1644421594" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">PingPath on the App Store</a>
               </li>
               {/* <li className="mb-2">
                 <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">ARtistry</Link>
@@ -43,7 +43,7 @@ function Footer() {
             <h3 className="text-gray-800 font-medium mb-2">Resources</h3>
             <ul className="text-sm">
               <li className="mb-2">
-                <Link to="/building" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Blog</Link>
+                <a href="#questions" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">About PingPath</a>
               </li>
               <li className="mb-2">
                 <Link to="https://andreas.craft.me/nnL9M4RftSjD6F" className="text-gray-600 hover:text-gray-900 transition duration-150 ease-in-out">Support Guide</Link>

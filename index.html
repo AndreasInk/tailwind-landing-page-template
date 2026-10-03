@@ -4,10 +4,57 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>PingPath</title>
+    <title>PingPath — AI Tools for Blind and Visually Impaired People</title>
+    <meta name="description" content="PingPath by Andreas Ink helps blind and visually impaired people explore indoor surroundings with spatial audio, AI captions, voice questions, and LiDAR." />
+    <link rel="canonical" href="https://www.pingpath.app/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="PingPath" />
+    <meta property="og:title" content="PingPath — AI Tools for Blind and Visually Impaired People" />
+    <meta property="og:description" content="Explore indoor surroundings with spatial audio, AI captions, voice questions, and LiDAR. Experimental pathfinding requires someone to assist with navigation." />
+    <meta property="og:url" content="https://www.pingpath.app/" />
+    <meta property="og:image" content="https://www.pingpath.app/images/pingpath-preview.png" />
+    <meta property="og:image:alt" content="PingPath app screenshots showing questions about surroundings" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PingPath — AI Tools for Blind and Visually Impaired People" />
+    <meta name="twitter:description" content="Spatial audio, AI captions, voice questions, and LiDAR for exploring indoor surroundings." />
+    <meta name="twitter:image" content="https://www.pingpath.app/images/pingpath-preview.png" />
+    <meta name="twitter:image:alt" content="PingPath app screenshots showing questions about surroundings" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Person",
+            "@id": "https://www.pingpath.app/#publisher",
+            "name": "Andreas Ink",
+            "url": "https://www.andreas.ink/"
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.pingpath.app/#website",
+            "name": "PingPath",
+            "url": "https://www.pingpath.app/",
+            "publisher": { "@id": "https://www.pingpath.app/#publisher" }
+          },
+          {
+            "@type": "MobileApplication",
+            "@id": "https://www.pingpath.app/#app",
+            "name": "PingPath",
+            "alternateName": "PingPath - Blind AI Tools",
+            "url": "https://www.pingpath.app/",
+            "description": "An iOS app for blind and visually impaired people to explore indoor surroundings with spatial audio, AI captions, voice questions, and LiDAR. Pathfinding is experimental and requires someone to assist with navigation.",
+            "operatingSystem": "iOS 18.0 or later",
+            "applicationCategory": "UtilitiesApplication",
+            "publisher": { "@id": "https://www.pingpath.app/#publisher" },
+            "downloadUrl": "https://apps.apple.com/us/app/pingpath-blind-ai-tools/id1644421594",
+            "sameAs": "https://apps.apple.com/us/app/pingpath-blind-ai-tools/id1644421594"
+          }
+        ]
+      }
+    </script>
   </head>
   <body class="font-inter antialiased bg-white text-gray-900 tracking-tight">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript><style>[data-aos] { opacity: 1 !important; transform: none !important; }</style></noscript>
     <script>
         if (localStorage.getItem('sidebar-expanded') == 'true') {
             document.querySelector('body').classList.add('sidebar-expanded');
@@ -17,10 +64,5 @@
     </script>   
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
-    <meta property="og:image" content="https://pingpath.vercel.app/assets/hero-image-098e8313.png">
-    <meta name="twitter:image" content="https://pingpath.vercel.app/assets/hero-image-098e8313.png">
-    <meta name="title" content="Ping Path">
-    <meta name="description" content="See Beyond Limits with AI and AR">
-    
   </body>
 </html>
